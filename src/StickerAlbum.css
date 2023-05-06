@@ -1,0 +1,79 @@
+.sticker-album {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.shield-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.sticker-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  max-width: 90%;
+  margin: auto;
+  padding: 1rem;
+  margin-top: calc(3rem);
+}
+
+@media screen and (min-width: 768px) {
+  .sticker-container {
+    max-width: 80%;
+  }
+}
+
+.album-header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.next-button,
+.prev-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.next-button:hover,
+.prev-button:hover {
+  opacity: 0.8;
+}
+
+.next-button-icon,
+.prev-button-icon {
+  width: 40px;
+  height: 40px;
+  fill: #fff;
+
+}
+
+.next-button {
+  right: 1rem;
+}
+
+.prev-button {
+  left: 1rem;
+}
+
+.prev-button-icon {
+  transform: rotate(180deg);
+}
+
+.inventory-button {
+  position: fixed;
+  top: 20px;
+  right: -600px;
+}
