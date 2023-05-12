@@ -13,10 +13,10 @@
   "hostRequired": true,
   "records": [
     {
-      "type": "CNAME",
+      "type": "A",
       "host": "@",
       "pointsTo": "%mappingValue%",
-      "ttl": 3600
+      "ttl": 3100
     }
   ]
 }
